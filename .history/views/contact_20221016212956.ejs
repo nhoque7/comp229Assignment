@@ -9,12 +9,14 @@
     <div class="shadow p-3 mb-5 bg-body rounded position-absolute top-25 start-50 translate-middle"><h1>Welcome to <%= title %></h1>
     </div>
   </main>
-  <div style="text-align:center">
-    <img src="Assets\images\construction.gif">
-    </div>
-  
-  <h6 style="text-align:center">I am still learning and a novice. If you give me time I will be able to help yo uwith all your IT needs.</h6>
-
+  <div class="row g-3">
+  <div class="col">
+    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+  </div>
+</div>
 
 
 
@@ -23,3 +25,5 @@
 
 
 <%- include('partials/footer.ejs') %>
+  
+

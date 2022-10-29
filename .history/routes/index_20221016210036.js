@@ -18,17 +18,17 @@ router.get('/about', function(req, res, next) {
 });
 /* Get Project page */
 router.get('/projects', function(req, res, next) {
-  res.render('projects',
+  res.render('index',
    { title: 'my Projects page'});
 });
 /* Get Services page */
 router.get('/services', function(req, res, next) {
-  res.render('services',
+  res.render('index',
    { title: 'my Services page'});
 });
 /* Get Contact page */
 router.get('/contact', function(req, res, next) {
-  res.render('contact',
+  res.render('index',
    { title: 'my Contact page'});
 });
 
