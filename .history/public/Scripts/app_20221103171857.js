@@ -18,7 +18,7 @@
         }
     }
 
-    window.addEventListener("load", Start);
+    window.addEventListener("Load", Start);
 
 
 })();

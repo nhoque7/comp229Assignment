@@ -1,0 +1,66 @@
+<%- include('../partials/header.ejs') %>
+
+
+ <%- include('../partials/main_nav.ejs') %>
+
+<!-- Content for the Edit page -->
+ <div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6"></div>
+        <h1><%= title %></h1>
+
+        <form class="form" method ="post">
+            <div class="form-group">
+                <label for="nameTextField">Book Title</label>
+                <input type="text" class="form-control"
+                id="nameTextField"
+                placeholder="Enter the Book Title"
+                title="title"
+                value="<%= book.title %>"
+                required>
+            </div>
+
+            <div class="form-group">
+                <label for="authorTextField">Author</label>
+                <input type="text" class="form-control"
+                id="authorTextField"
+                placeholder="Enter the Book Author"
+                title="author" 
+                value="<%= book.author %>"
+                required>
+            </div>
+
+            <div class="form-group">
+                <label for="genreTextField">Genre</label>
+                <input type="text" class="form-control"
+                id="genreTextField"
+                placeholder="Enter the Book Genre"
+                title="genre" 
+                value="<%= book.genre %>"
+                required>
+            </div>
+
+            <div class="form-group">
+                <label for="priceTextField">Price</label>
+                <input type="number" class="form-control"
+                id="priceTextField"
+                placeholder="Enter the Book's Price"
+                title="price" 
+                value="<%= book.price %>"
+                required>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+                <i class="fas fa-edit"></i> Submit</button>
+
+                <a href="/book-list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i> Cancel</a>
+        </form>
+    </div>
+ </div>
+
+ <%- include('../partials/bottom_nav.ejs') %>
+ 
+
+
+<%- include('../partials/footer.ejs') %>
